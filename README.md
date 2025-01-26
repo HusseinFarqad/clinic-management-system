@@ -71,7 +71,7 @@ npm install
 ```env
 NODE_ENV=development
 PORT=3000
-MONGODB_URI=mongodb://localhost:27017/clinic-management
+dbUrl=mongodb://localhost:27017/clinic-management
 MAPBOX_TOKEN=your_mapbox_token
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_KEY=your_api_key
@@ -89,7 +89,7 @@ The system requires several environment variables to be set:
 
 - `NODE_ENV`: Set to 'development' or 'production'
 - `PORT`: Server port number
-- `MONGODB_URI`: MongoDB connection string
+- `dbUrl`: MongoDB connection string
 - `MAPBOX_TOKEN`: Mapbox API token for location services
 - `CLOUDINARY_*`: Cloudinary credentials for image storage
 

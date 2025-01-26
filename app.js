@@ -85,13 +85,10 @@ app.use((req, res, next) => {
   res.locals.currentUser = req.user;
   res.locals.success = req.flash("success");
   res.locals.error = req.flash("error");
-  // console.log("flasssshhhh");
   next();
 });
 
-// const dbUrl =
-//   process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/secritePage";
-const dbUrl = process.env.MONGODB_URI;
+const dbUrl = process.env.dbUrl;
 
 // Mongoose
 mongoose
